@@ -10,20 +10,22 @@
 %Make sure you have the compiler "XeLaTeX" activated on your settings for your LaTeX document in order to see the font 
 
 %------------------Color Set--------------------------
-\definecolor{LightBlue}{RGB}{66, 163, 251}
-\definecolor{DarkBlue}{RGB}{36, 100, 176}
+\definecolor{DarkBlue}{RGB}{0, 0, 139}
+\definecolor{MediumBlue}{RGB}{65,105,225}
+\definecolor{LightBlue_1}{RGB}{100,149,237}
+\definecolor{LightBlue_2}{RGB}{66, 163, 251}
 \definecolor{LightGray}{gray}{.94}
 \definecolor{DarkGray}{gray}{.172}
 \definecolor{Orange}{RGB}{229, 133, 3}
-\definecolor{MediumBlue}{RGB}{38, 119, 193}
 
 %------------------Section Default Setting-------------
 \titleformat*{\section}{\color{DarkBlue}\normalfont\bfseries\Huge}
-\titleformat*{\subsection}{\color{LightBlue}\normalfont\bfseries\LARGE}
-\titleformat*{\subsubsection}{\color{MediumBlue}\normalfont\bfseries\LARGE}
+\titleformat*{\subsection}{\color{MediumBlue}\normalfont\bfseries\LARGE}
+\titleformat*{\subsubsection}{\color{LightBlue_1}\normalfont\bfseries\Large}
+\titleformat*{\paragraph}{\color{LightBlue_2}\normalfont\bfseries\large}
 
 %-------------------Section Numbers Removal------------
-\setcounter{secnumdepth}{0}
+%\setcounter{secnumdepth}{0}
 
 
 %-------------------------Header & Footer------------------------

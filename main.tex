@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[spanish]{babel}
+%\usepackage[spanish]{babel}
 % \usepackage{lipsum}
 % \usepackage{natbib}
 \usepackage{graphicx}
@@ -11,29 +11,35 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{placeins}
+\DeclareCaptionLabelFormat{AppendixTables}{A.#2}
+
+\setcounter{secnumdepth}{4}
 
 %------------------Document----------------------------
 
 \begin{document}
-
+\includepdf[pages=1, fitpaper=true]{cover.pdf}
+%\maketitle
 %-------------------------TitlePage------------------------
 %\begin{titlepage}
 %\end{titlepage}
 
 %-------------------------Content------------------------
-\include{01_1_Resumen}
-\include{01_2_Coyuntura}
-\include{02_1_Cotizantes_IEM}
-\include{02_2_Cotizantes_Novedades}
-\include{02_3_Cotizantes_ESP}
-\include{02_4_Cotizantes_Subsidiado_Contributivo}
-\include{02_5_Cotizantes_Sociodemograficos}
-\include{03_1_Aportante_ActividadEconomica}
-\include{03_02_Aportante_TamanoEmpresa}
-\include{04_pagos_cotizacion}
-\include{05_AnexoTecnico}
+\include{1_Resumen}
+\include{2_SeguimientoLongitudinal}
+\include{3_Pagos_cotizacion}
+%\include{4_Coyuntura}
 
-
+\appendix
+\captionsetup{labelformat=AppendixTables}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\include{5_AnexoTecnico}
 
 % %-------------------------Content------------------------
 
