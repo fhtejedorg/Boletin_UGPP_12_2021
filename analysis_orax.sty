@@ -2,7 +2,7 @@
 \usepackage{tikz}
 \usepackage{fontspec}
 \usepackage{xcolor}
-\usepackage[left=1.2cm,right=1.2 cm,top=2cm,bottom=1.5 cm]{geometry}
+\usepackage[left=1.2cm,right=1.2 cm,top=3cm,bottom=1.5 cm]{geometry}
 \usepackage{fancyhdr}
 
 %------------------Main Font-------------------------
@@ -32,12 +32,6 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{
-\begin{tikzpicture}[remember picture,overlay] \node[anchor=north west, yshift=1.5mm, xshift=-1.5mm] at (current page.north west) {\includegraphics[height=25mm]{figures/header_corner.png}};
-\end{tikzpicture}
-}
-\fancyfoot[C]{
-\begin{tikzpicture}[remember picture,overlay] \node[anchor=south east, yshift=-1.2cm, xshift=1.5mm] at (current page.south east) {\includegraphics[height=29mm]{figures/banner.png}};
-\end{tikzpicture}
-\textcolor{LightGray}{\thepage}
-}
+\rhead{\includegraphics[width=2.5cm]{logo_ugpp.png}}
+\lhead{Boletín Mensual - \textbf{Diciembre 2021} }
+\rfoot{Página \thepage}

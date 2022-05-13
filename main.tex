@@ -1,5 +1,5 @@
 \documentclass{article}
-%\usepackage[spanish]{babel}
+\usepackage[spanish]{babel}
 % \usepackage{lipsum}
 % \usepackage{natbib}
 \usepackage{graphicx}
@@ -16,6 +16,11 @@
 \usepackage{titlesec}
 \usepackage{caption}
 \usepackage{placeins}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage[usenames,dvipsnames]{color}
+%\usepackage{kantlipsum, wrapfig,graphicx}
+        
 \DeclareCaptionLabelFormat{AppendixTables}{A.#2}
 
 \setcounter{secnumdepth}{4}
@@ -23,7 +28,7 @@
 %------------------Document----------------------------
 
 \begin{document}
-\includepdf[pages=1, fitpaper=true]{cover.pdf}
+\includepdf[pages=1, fitpaper=true]{portada.pdf}
 %\maketitle
 %-------------------------TitlePage------------------------
 %\begin{titlepage}
@@ -37,8 +42,8 @@
 
 \appendix
 \captionsetup{labelformat=AppendixTables}
-\setcounter{figure}{0}
-\setcounter{table}{0}
+%\setcounter{figure}{0}
+%\setcounter{table}{0}
 \include{5_AnexoTecnico}
 
 % %-------------------------Content------------------------
